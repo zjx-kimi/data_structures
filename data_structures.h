@@ -6,8 +6,6 @@
 #define pii pair <int, int>
 #define all(a) a.begin(), a.end();
 using namespace std;
-
-// 树状数组
 struct FenwickTree {
     vector<int> tree;
 
@@ -29,8 +27,6 @@ struct FenwickTree {
         return sum;
     }
 };
-
-// 线段树
 struct SegmentTree {
     vector<int> tree;
 
@@ -70,8 +66,6 @@ struct SegmentTree {
         return query(left, right, 1, 0, n - 1);
     }
 };
-
-// DSU
 struct DSU {
     vector<int> parent;
 
@@ -97,4 +91,4 @@ struct DSU {
     }
 };
 
-#endif // DATA_STRUCTURES_H
+#endif
