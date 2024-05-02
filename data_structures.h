@@ -1,6 +1,7 @@
 #ifndef DATA_STRUCTURES_H
 #define DATA_STRUCTURES_H
-
+#include <queue>
+#include <stack>
 #include <vector>
 #include <iostream>
 #define pii pair <int, int>
