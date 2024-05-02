@@ -4,7 +4,7 @@
 #include <vector>
 #include <iostream>
 #define pii pair <int, int>
-
+#define all(a) a.begin(), a.end();
 using namespace std;
 
 // 树状数组
