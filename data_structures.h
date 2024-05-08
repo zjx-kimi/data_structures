@@ -11,16 +11,16 @@ int max(int count, ...) {
     va_list args;
     va_start(args, count);
 
-    int minVal = va_arg(args, int);
+    int maxVal = va_arg(args, int);
     for (int i = 1; i < count; ++i) {
         int val = va_arg(args, int);
-        if (val > minVal) {
-            minVal = val;
+        if (val > maxVal) {
+            maxVal = val;
         }
     }
 
     va_end(args);
-    return minVal;
+    return maxVal;
 }
 int min(int count, ...) {
     va_list args;
@@ -29,7 +29,7 @@ int min(int count, ...) {
     int minVal = va_arg(args, int);
     for (int i = 1; i < count; ++i) {
         int val = va_arg(args, int);
-        if (val < maxVal) {
+        if (val < minVal) {
             minVal = val;
         }
     }
