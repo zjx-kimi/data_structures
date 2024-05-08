@@ -7,6 +7,36 @@
 #define pii pair <int, int>
 #define all(a) a.begin(), a.end();
 using namespace std;
+int max(int count, ...) {
+    va_list args;
+    va_start(args, count);
+
+    int maxVal = va_arg(args, int);
+    for (int i = 1; i < count; ++i) {
+        int val = va_arg(args, int);
+        if (val > maxVal) {
+            maxVal = val;
+        }
+    }
+
+    va_end(args);
+    return maxVal;
+}
+int min(int count, ...) {
+    va_list args;
+    va_start(args, count);
+
+    int minVal = va_arg(args, int);
+    for (int i = 1; i < count; ++i) {
+        int val = va_arg(args, int);
+        if (val < maxVal) {
+            minVal = val;
+        }
+    }
+
+    va_end(args);
+    return minVal;
+}
 struct FenwickTree {
     vector<int> tree;
 
